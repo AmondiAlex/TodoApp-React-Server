@@ -8,7 +8,13 @@
     "build-dev": "webpack",
     "build-prod": "webpack -p --env production",
     "serve": "live-server public/",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webpack-dev-server",
+     "start": "node server/server.js",
+     "heroku-postbuild":"npm run build-prod"
+  },
+  "engines": {
+    "node": "<=14.x.x",
+    "npm":"<=6.x.x"
   },
   "author": "",
   "license": "ISC",
